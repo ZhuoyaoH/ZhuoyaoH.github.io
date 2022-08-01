@@ -15,59 +15,69 @@
 
 <style>
 
+	
+
+body {
+    margin: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
-    padding:0;
-	overflow: hidden;
-    background-color:#F7D0C8;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
     position: fixed;
-    top: 0;
-    width: 92%;
-}
-
-li {
-    float: right;
+    height: 100%;
+    overflow: auto;
 }
 
 li a {
     display: block;
-    color:indianred;
-    text-align: center;
-    padding: 14px 16px;
+    color: #000;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 li a:hover:not(.active) {
-	color:black;
+    background-color: #555;
+    color: white;
+}	
 
-}
-
-.active {
-    background-color:#B972DD;
-	color:white;
-}
+	
+	
+	
+	
 </style>
+
+	
+	
 </head>
 
 
+	
+	
+
+<body>
 <ul>  
 	
-
+   <li><a class="active" href="#home">个人简介</a></li>
   
+   <li><a href="#教育">学习科研</a></li>
    <li><a href="#学生工作">学生工作</a></li>
 
-   <li><a href="#教育">学习科研</a></li>
-   <li><a class="active" href="#home">个人简介</a></li>
+
 
  </ul>
+		
 	
 	
-	
-	
-	
-	
-<body>
+<div style="margin-left:30%;padding:1px 16px;height:1000px;">	
 <!-- Header content -->
 <header>
   <div class="profileLogo"> 
@@ -205,4 +215,5 @@ li a:hover:not(.active) {
 
 </footer>
 </body>
+	</div>
 </html>
